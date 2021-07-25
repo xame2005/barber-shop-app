@@ -35,6 +35,7 @@ async function mostrarServicios() {
 
       //Inyectar Precio y Nombre al div de servicio
       servicioDiv.appendChild(nombreServicio);
+      servicioDiv.appendChild(precioServicio);
 
       //Inyectar en HTML
       document.querySelector("#servicios").appendChild(servicioDiv);
