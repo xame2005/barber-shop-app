@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App Salón de Belleza</title>
+    <title>App Barbería</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap"
       rel="stylesheet"
@@ -18,22 +18,27 @@
           <h1>App Peluqueria</h1>
         </header>
         <nav class="tabs">
-          <button type="button">Servicios</button>
-          <button type="button">Información Cliente</button>
-          <button type="button">Resumen</button>
+          <button type="button" data-paso="1">Servicios</button>
+          <button type="button" data-paso="2">Información Cliente</button>
+          <button type="button" data-paso="3">Resumen</button>
         </nav>
 
         <!--Aquí comienza el contenido de la App-->
-        <div class="seccion">
+        <div class="seccion" id="paso-1">
           <h2>Servicios</h2>
           <p class="text-center">Elige tus Servicios a Continuación</p>
           <div id="servicios" class="listado-servicios"></div>
         </div>
-        <div class="seccion">
+        <div class="seccion" id="paso-2">
           <h2>Tus Datos y Cita</h2>
         </div>
-        <div class="seccion">
+        <div class="seccion" id="paso-3">
           <h2>Resumen</h2>
+        </div>
+
+        <div class="paginacion">
+          <button id="anterior">&laquo; Anterior</button>
+          <button id="siguiente">Siguiente &raquo;</button>
         </div>
       </div>
     </div>
